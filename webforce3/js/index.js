@@ -96,11 +96,7 @@
 // tableau.fill("goyave")
 // console.log(tableau)
 
-
 /*******************************FIN EXERCICE ****************************************************** */
-
-
-
 
 // **************************************  EXERCICE ***************************************************************
 
@@ -129,23 +125,86 @@
 // console.log(r)
 
 
+
+// **************************************  EXERCICE ***************************************************************
+
+// var somme = [1, 6, 9];
+// function sommetab(tableau) {
+//   let somme = 0;
+//   for (var i = 0; i < tableau.length; i++) {
+//     somme = somme + tableau[i];
+//   }
+//   return somme;
+// }
+
+// var resultat = sommetab(somme);
+// console.log(resultat);
+
+
 /*******************************FIN EXERCICE ****************************************************** */
+
+// **************************************  EXERCICE ***************************************************************
+
+
+// ecrire une fonction maxTab qui prend en paramètre un tableau composé de
+// nombres
+// la fonction devra retourner le plus grand nombre du tableau
+// exemple:
+// maxTab([2, 7, 4, 0]) => 7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function reverseWord(tab) {
+    return chaine.split('').reverse().join('');
+}
+
+
+var mot = "Bonjour";
+var resultat = reverseWord(mot);
+console.log(resultat);
+
+/*******************************FIN EXERCICE ****************************************************** */
+
+
+
+
+// ecrire une fonction maxMinTab qui prend en paramètre un tableau composé de
+// nombres et un boolean
+// ● si le deuxieme parametre égale true la fonction devra retourner le plus
+// grand nombre du tableau
+// ● sinon elle retournera le plus petit
+// exemple:
+// maxMinTab([2, 7, 4, 0], true) => 7
+// maxMinTab([2, 7, 4, 0], false) => 0
 
 
 // **************************************  EXERCICE ***************************************************************
 
 
-var tab = [1,6,9]
-function sommetab(tableau) {
-  let tab = 0;
-  for (var i = 0; i < tableau.length; i++){
-    
-tab = tab+ tableau[i]
 
+var note = 0;
+if (note >= 15) {
+  
+console.log("bien");
 
-  }
-  return tab;
+}
+else {
+  
+  console.log("mauvais");
+
 }
 
-var resultat = sommetab(tab);
-console.log(resultat);
+var message =(note>=15 ) ? "bien" : "mauvais"
