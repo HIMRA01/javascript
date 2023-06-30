@@ -167,14 +167,14 @@
 
 
 
-function reverseWord(tab) {
-    return chaine.split('').reverse().join('');
-}
+// function reverseWord(tab) {
+//     return chaine.split('').reverse().join('');
+// }
 
 
-var mot = "Bonjour";
-var resultat = reverseWord(mot);
-console.log(resultat);
+// var mot = "Bonjour";
+// var resultat = reverseWord(mot);
+// console.log(resultat);
 
 /*******************************FIN EXERCICE ****************************************************** */
 
@@ -195,16 +195,166 @@ console.log(resultat);
 
 
 
-var note = 0;
-if (note >= 15) {
+// var note = 0;
+// if (note >= 15) {
   
-console.log("bien");
+// console.log("bien");
 
-}
-else {
+// }
+// else {
   
-  console.log("mauvais");
+//   console.log("mauvais");
 
+// }
+
+// var message =(note>=15 ) ? "bien" : "mauvais"
+
+
+
+
+
+
+
+
+
+
+
+
+//   class Personne {
+//     constructor(nom, age) {
+//       this.nom = nom;
+//       this.age = age;
+//     }
+    
+
+//        saluer() {
+//       console.log("Bonjour, je m'appelle " + this.nom + " et j'ai " + this.age + " ans.");
+//     }
+
+// }
+
+
+// let p1 = new Personne("toto", 10);
+
+// let p2 = new Personne("titi", 9);
+
+// console.log(p2.nom)
+
+
+
+
+
+
+// class cercle{
+//   constructor(r) {
+//     this.rayon = r;
+
+// }
+
+//   calculersurface() {
+  
+//     let cal = math.pi * this.rayon * this.rayon;
+//     return cal
+
+// }
+
+//   afficheinfo() {
+    
+// console.log(this.calculersurface)
+
+
+//   }
+  
+  
+// }
+//   let r2 = new cercle (00)
+// r2
+
+
+
+
+
+var h1Element = document.querySelector("h1.title");
+h1Element.classList.add("red");
+var pElement = document.querySelector("p.content");
+pElement.classList.remove("content");
+pElement.classList.add("blue");
+var buttonElement = document.querySelector("#btn");
+buttonElement.classList.add("bouton");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Sélectionner l'élément <h1> avec la classe "title" et ajoutez lui la classe red.
+    // Sélectionner l'élément <p> avec la classe "content" et remplacez la classe content par la classe blue.
+    // Sélectionner l'élément <button> avec l'ID "btn" donnez lui une classe bouton
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class CompteBancaire {
+  constructor(titulaire, solde) {
+    this.titulaire = titulaire;
+    this.solde = solde;
+  }
+
+  deposer(montant) {
+    this.solde += montant;
+  }
+
+  retirer(montant) {
+    if (montant <= this.solde) {
+      this.solde -= montant;
+    } else {
+      console.log("Solde insuffisant.");
+    }
+  }
+
+  afficherSolde() {
+    console.log("Solde actuel du compte :", this.solde);
+  }
 }
 
-var message =(note>=15 ) ? "bien" : "mauvais"
+
+const compte = new CompteBancaire("Abraham", 5);
+
+
+compte.deposer(10);
+compte.retirer(7);
+compte.afficherSolde();
+
+

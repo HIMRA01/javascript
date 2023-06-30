@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+ 
+
+<head>
+    <title>Exercice DOM</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+        .bouton{
+            padding: 10px;
+            border-radius: 15px;
+            border: solid 2px;
+        }
+    </style>
+</head>
+
+ 
+
+<body>
+    <div id="container">
+        <h1 class="title">Titre de la page</h1>
+        <p class="content">Contenu de la page</p>
+        <button id="btn">Cliquez ici</button>
+    </div>
+
+ 
+
+    <script>
+ 
+var h1Element = document.querySelector("h1.title");
+h1Element.classList.add("red");
+var pElement = document.querySelector("p.content");
+pElement.classList.remove("content");
+pElement.classList.add("blue");
+var buttonElement = document.querySelector("#btn");
+buttonElement.classList.add("bouton");
+
+    </script>
+</body>
+
+ 
+
+</html>
+
+ 
+
+<!-- 
