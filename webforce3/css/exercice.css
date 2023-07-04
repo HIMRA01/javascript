@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  margin: auto;
+  width: 440px;
+}
+
+.formule {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+  margin-top: 40px;
+  
+}
+/* .nb1 {p
+  padding-top: 50px;
+} */
+#contenair{
+
+  display: flex;
+
+
+}
+
+
+.nb1{
+margin-right: 25px;
+  margin-top: 60px;
+}
+
+.nb2{
+margin-right: 25px;
+  margin-top: 60px;
+  
+}
+.egal{
+
+margin-right: 25px;
+  margin-top: 60px;
+
+}
+.result{
+
+  margin-right: 25px;
+  margin-top: 60px;
+}
